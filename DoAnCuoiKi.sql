@@ -38,7 +38,7 @@ CREATE TABLE `account` (
   `role` text CHARACTER SET utf8 COLLATE utf8_general_ci,
   `token` text,
   `token_expire_time` datetime DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `account`
@@ -61,7 +61,7 @@ CREATE TABLE `attendance` (
   `class_code` text CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `date_join` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `status` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `attendance`
@@ -86,7 +86,7 @@ CREATE TABLE `classroom` (
   `course_name` text CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `class_image` text CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `room` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `classroom`
@@ -107,9 +107,9 @@ CREATE TABLE `classwork` (
   `class_code` text NOT NULL,
   `classwork_code` text NOT NULL,
   `title` text NOT NULL,
-  `description` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
-  `file` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `description` text CHARACTER SET utf8 COLLATE utf8_general_ci,
+  `file` text CHARACTER SET utf8 COLLATE utf8_general_ci
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `classwork`
@@ -149,7 +149,7 @@ CREATE TABLE `comment` (
   `classwork_code` text NOT NULL,
   `email` text NOT NULL,
   `content` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
 
@@ -160,7 +160,7 @@ CREATE TABLE `comment` (
 CREATE TABLE `cookie` (
   `email` text CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `token` text CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `cookie`
